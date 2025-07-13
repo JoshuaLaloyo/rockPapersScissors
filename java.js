@@ -53,4 +53,11 @@ for (let i = 0; i < 5; i++) {
     const computerSelection = getComputerChoice();
     console.log(playRound(humanSelection, computerSelection));
 }
-terminal.log(`Final Score: Your Score: ${humanScore}, Computer Score: ${computerScore}`);
+console.log(`Final Score Your Score: ${humanScore}, Computer Score: ${computerScore}`);
+if (humanScore > computerScore) {
+    console.log(`You win the game!`);
+}else if (humanScore < computerScore) {
+    console.log(`You lose the game!`);
+}else {
+    console.log(`It's a tie!`);
+}
