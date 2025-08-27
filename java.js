@@ -64,13 +64,13 @@ function playRound() {
     }
     roundCount++;
     if (roundCount === 5) {
-        paragraph3.textContent = `Final Score - Your Score: ${humanScore}, Computer Score: ${computerScore}`;
+        paragraph2.textContent = `Final Score - Your Score: ${humanScore}, Computer Score: ${computerScore}`;
         if (humanScore > computerScore) {
             paragraph3.textContent += ` You win the game!`;
         } else if (humanScore < computerScore) {
             paragraph3.textContent += ` You lose the game!`;
         } else {
-            paragraph3.textContent += ` It's a tie!`;
+            paragraph2.textContent += ` It's a tie!`;
         }
     }
 }
